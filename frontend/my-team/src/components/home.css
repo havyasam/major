@@ -1,0 +1,75 @@
+body{
+  background: white;
+}
+.Home{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.heading{
+    color: #149ceb;
+}
+.image1{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: 70px;
+    bottom:0;
+}
+.image2{
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    right: 100px;
+    bottom:50px;
+}
+.homeButton{
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149ceb;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .homeButton::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: white;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .homeButton::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: white;
+    transition: 0.5s;
+  }
+  
+  .homeButton:hover::before, .homeButton:hover::after {
+    transform: scale(0)
+  }
+  
+  .homeButton:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
